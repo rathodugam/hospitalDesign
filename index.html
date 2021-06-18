@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- external  stylesheet  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fa fa icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- slick slider  -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+   <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+   <!-- End WOWSlider.com HEAD section -->
+
+</head>
+<body onload="myFunction()">
+    <!-- navigation bar  -->
+    <div id="loading">
+        
+    </div>
+    <section class="bg-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="img-fluid" height="80px" width="120px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            About
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#"><i class="fa fa-building" aria-hidden="true"></i> Hospital</a><hr>
+                          <a class="dropdown-item" href="#"><i class="fa fa-users" aria-hidden="true"></i> Our Team</a>
+                        </div>
+                    </li>  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Speciality
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">
+                              <img src="images/icon/pediatrics-24x24.png" class="img-fluid" height="24" width="24">  Pediatrics
+                          </a><hr>
+                          <a class="dropdown-item" href="#">
+                              <img src="images/icon/neonatology-icon.png" class="img-fluid" height="24" width="24">  Neonatology 
+                          </a><hr>
+                          <a class="dropdown-item" href="#">
+                              <img src="images/icon/Gynecology.png" class="img-fluid" height="24" width="24">  Obstetric & Gynecology
+                          </a><hr>
+                          <a class="dropdown-item" href="#">
+                            <img src="images/icon/dental.png" class="img-fluid" height="24" width="24">  Dental Surgery
+                          </a><hr>
+                          <a class="dropdown-item" href="#">
+                            <img src="images/icon/nephrology.png" class="img-fluid" height="24" width="24">  Nephrology
+                          </a><hr>
+                          <a class="dropdown-item" href="#">
+                            <img src="images/icon/urology.png" class="img-fluid" height="24" width="24">  Urology
+                          </a><hr>
+                          <a class="dropdown-item" href="#">
+                            <img src="images/icon/general-medicine.png" class="img-fluid" height="24" width="24">  General Medicine
+                          </a><hr>
+                          <a class="dropdown-item" href="#">
+                            <img src="images/icon/orthopedic.png" class="img-fluid" height="24" width="24">  Orthopedics
+                          </a><hr>
+                          <a class="dropdown-item" href="#">
+                            <img src="images/icon/neuroscience.png" class="img-fluid" height="24" width="24">  Neuro Science unit
+                          </a><hr>
+                          <a class="dropdown-item" href="#">
+                            <img src="images/icon/Nutrition.png" class="img-fluid" height="24" width="24">  Nutrition & Dietetics
+                          </a><hr>
+                          <a class="dropdown-item" href="#">
+                            <img src="images/icon/general-surgery.png" class="img-fluid" height="24" width="24">  General Surgery
+                          </a><hr>
+                          <a class="dropdown-item" href="#">
+                            <img src="images/icon/ENT.png" class="img-fluid" height="24" width="24">  ENT
+                          </a><hr>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Services
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <img src="images/icon/pharmacy.png" class="img-fluid" height="24" width="24">  Pharmacy
+                            </a><hr>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/icon/cssd.png" class="img-fluid" height="24" width="24">  Laboratory
+                            </a><hr>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/icon/radiology.png" class="img-fluid" height="24" width="24">  Radiology
+                            </a><hr>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/icon/microbiology.png" class="img-fluid" height="24" width="24">  Microbiology
+                            </a><hr>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/icon/associate.png" class="img-fluid" height="24" width="24">  TPA
+                            </a><hr>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/icon/ambulance.png" class="img-fluid" height="24" width="24">  Ambulance
+                            </a><hr>                             
+                        </div>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>    
+                  </ul>
+                </div>  
+            </nav>
+        </div>
+    </section>
+    <!-- end navigation bar -->
+    <!-- banner  -->
+    <section>
+       <!-- Start WOWSlider.com BODY section -->
+    <div id="wowslider-container1">
+        <div class="ws_images"><ul>
+                <li><img src="data1/images/slide1.jpg" alt="" title="" id="wows1_0"/></li>
+                <li><img src="data1/images/slide2.jpg" alt="" title="" id="wows1_1"/></li>
+                <li><a href="http://wowslider.net"><img src="data1/images/slide3.jpg" alt="javascript image slider" title="" id="wows1_2"/></a></li>
+                <li><img src="data1/images/slide4.jpg" alt="" title="" id="wows1_3"/></li>
+            </ul></div>
+        <div class="ws_shadow"></div>
+    </div>	
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
+    <!-- End WOWSlider.com BODY section -->
+    </section>
+    <!-- end banner  -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="services text-center">
+                        <img src="images/service24.jpg" class="img-fluid mt-4" height="70px" width="70px">
+                        <h4>Emergency Services</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="services text-center">
+                        <img src="images/diagnostic.png" class="img-fluid mt-4" height="40px" width="50px">
+                        <h4>Emergency Services</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="services text-center">
+                        <img src="images/ambulance-png.png" class="img-fluid mt-4" height="100px" width="140px">
+                        <h4>Ambulance</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="services text-center">
+                        <img src="images/doctore.png" class="img-fluid mt-4" height="70px" width="70px">
+                        <h4>Ambulance</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Specialization  -->
+    <section class="specialization">
+        <h2 class="heading">Area Of Specialization</h2>
+        <div class="container">
+            <div class=" row slick-slider">
+                <div>
+                    <img src="images/slider/Dental-Surgeries.png" class="img -fluid">
+                </div>
+                <div>
+                    <img src="images/slider/ENT.png" class="img-fluid">
+                </div>
+                <div>
+                    <img src="images/slider/General-Medicines.png" class="img-fluid">
+                </div>
+                <div>
+                    <img src="images/slider/Nephrologist (1).png" class="img-fluid">
+                </div>
+                <div>
+                    <img src="images/slider/Neuro-Science.png" class="img-fluid">
+                </div>
+                <div>
+                    <img src="images/slider/Obstetric-Gynecology.png" class="img-fluid">
+                </div>
+                <div>
+                    <img src="images/slider/Orthopedics.png" class="img-fluid">
+                </div>
+                <div>
+                    <img src="images/slider/Pediatrics.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Specialization  -->
+    <!-- about  -->
+    <section class="about">
+        <div class="container">
+           <div class="row">
+                <div class="col-md-6">
+                    <img src="images/hospital.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6 content">
+                <h2 class="about-heading">About Hospital</h2> 
+                    <p><b> HOSPITALS </b>has state-of-the art infrastructure and is equipped to offer healthcare services in specialties and super specialties backed by specialized facilities, value added services and round-the-clock services. The hospital is one place treatment center with all diagnostics facilities with excellence & patient-friendly ambiance.</p>
+                    <p>With medical expertise supported by the latest equipment’s, offer healthcare treatment of quality standards with utmost transparency, compassion and care. Care with compassion and service excellence are the guiding principles of the team. With the same, the hospital builds an integrated atmosphere that helps to provide patients with the most effective patient care meeting the core objective of “Care par excellence”.</p>
+                    <p class="know-more">Know More <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+                </div>
+           </div>
+        </div>
+    </section>
+    <!-- end about  -->
+    <script>
+    $(document).ready(function(){
+    $(".dropdown").hover(            
+                function() {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+                    $(this).toggleClass('open');        
+                },
+                function() {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("100");
+                    $(this).toggleClass('open');       
+                }
+            );
+        });
+    </script>
+    <script>
+       var preloder = document.getElementById('loading')
+       function myFunction(){
+           preloder.style.display = 'none';
+       }
+    </script>
+    <script type="text/javascript" src="js/slick.min.js"></script> 
+    <script>  
+        $('.slick-slider').slick({
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+        </script>
+</body>
+</html>
