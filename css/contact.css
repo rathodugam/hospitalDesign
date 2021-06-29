@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.contact{
+    background-color: #1a3867;
+    padding: 100px 0px;
+    color: #fff;
+}
+.contactus{
+    position: relative;
+    width: 900px;
+    max-width: 80%;
+    border: 2px solid #f39313;
+    border-top: none;
+    text-align: center;
+    margin: 60px auto;
+  }
+  
+  .contactus h1 {
+    position: relative;
+    margin-top: -14px;
+    display: inline-block;
+    letter-spacing: 4px;
+  }
+  
+  .top-border{
+    position: absolute;
+    height: 2px;
+    width: 24%;
+    background-color: #f39313;
+  }
+  
+  .right {
+    right: 0;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  @media (max-width: 685px) {
+  .top-border {	
+    width: 18%;
+      }
+  }
+  @media (max-width: 500px) {
+    .top-border {	
+      display: none;
+    }
+    .contactus {
+    border-top: 2px solid #f39313;
+    }
+    .contactus h1 {
+      margin: 20px 6px;
+    }
+  }
+.contact-form {
+    padding: 30px;
+}
+label {
+    display: flex !important;
+}
+.btn-send {
+    /* color: #f39313; */
+    background-color: #f39313;
+    font-weight: 700;
+    border-color: #f39313;
+}

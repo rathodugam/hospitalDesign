@@ -32,12 +32,13 @@
     <script type="text/javascript" src="engine1/jquery.js"></script>
    <!-- End WOWSlider.com HEAD section -->
 
+   <!-- aos animation  -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
 </head>
 <body onload="myFunction()">
     <!-- navigation bar  -->
-    <div id="loading">
-        
-    </div>
+    <div id="loading"></div>
     <section class="bg-nav">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark">
@@ -57,8 +58,8 @@
                             About
                         </a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#"><i class="fa fa-building" aria-hidden="true"></i> Hospital</a><hr>
-                          <a class="dropdown-item" href="#"><i class="fa fa-users" aria-hidden="true"></i> Our Team</a>
+                          <a class="dropdown-item" href="page/about.html"><i class="fa fa-building" aria-hidden="true"></i> Hospital</a><hr>
+                          <a class="dropdown-item" href="page/about.html"><i class="fa fa-users" aria-hidden="true"></i> Our Team</a>
                         </div>
                     </li>  
                     <li class="nav-item dropdown">
@@ -66,7 +67,7 @@
                             Speciality
                         </a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">
+                          <a class="dropdown-item" href="page/pediatrics.html">
                               <img src="images/icon/pediatrics-24x24.png" class="img-fluid" height="24" width="24">  Pediatrics
                           </a><hr>
                           <a class="dropdown-item" href="#">
@@ -133,10 +134,10 @@
                         <a class="nav-link" href="#">Gallery</a>
                     </li>    
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Career</a>
+                        <a class="nav-link" href="page/career.html">Career</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="page/contact.html">Contact</a>
                     </li>    
                   </ul>
                 </div>  
@@ -241,19 +242,194 @@
         </div>
     </section>
     <!-- end about  -->
-    <script>
-    $(document).ready(function(){
-    $(".dropdown").hover(            
-                function() {
-                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
-                    $(this).toggleClass('open');        
-                },
-                function() {
-                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("100");
-                    $(this).toggleClass('open');       
+    <!-- our team  -->
+    <section class="team">
+        <h3 class="heading">OUR TEAM</h3>
+        <p class="text-center">We have multiple expert doctors in different departments such as Pediatrics, Dental Surgery, Nephrology, Radiology, <br>Cardiology, Orthopedics, ENT, Neuro Science unit, etc.</p>
+        <div class="container">
+            <div class="row slick">
+                <div class="col">
+                    <div class=" team-bg">
+                        <div class="content-bg">
+                            <h3>Hospital</h3>
+                           <img src="images/dr-profile.png" class="img-fluid mt-2" alt="" height="90px" width="90px">
+                            <p>DR. VIPUL PATEL</p>
+                            <p>M.B.B.S,D.N.B</p>
+                            <p>ORTHOPEDIC DEPARTMENT</p>
+                            <p>Speciality intrest in inferttility.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" team-bg">
+                        <div class="content-bg">
+                            <h3>Hospital</h3>
+                           <img src="images/dr-profile.png" class="img-fluid mt-2" alt="" height="90px" width="90px">
+                            <p>DR. VIPUL PATEL</p>
+                            <p>M.B.B.S,D.N.B</p>
+                            <p>ORTHOPEDIC DEPARTMENT</p>
+                            <p>Speciality intrest in inferttility.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="team-bg">
+                        <div class="content-bg">
+                            <h3>Hospital</h3>
+                           <img src="images/dr-profile.png" class="img-fluid mt-2" alt="" height="90px" width="90px">
+                            <p>DR. VIPUL PATEL</p>
+                            <p>M.B.B.S,D.N.B</p>
+                            <p>ORTHOPEDIC DEPARTMENT</p>
+                            <p>Speciality intrest in inferttility.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="team-bg">
+                        <div class="content-bg">
+                            <h3>Hospital</h3>
+                           <img src="images/dr-profile.png" class="img-fluid mt-2" alt="" height="90px" width="90px">
+                            <p>DR. VIPUL PATEL</p>
+                            <p>M.B.B.S,D.N.B</p>
+                            <p>ORTHOPEDIC DEPARTMENT</p>
+                            <p>Speciality intrest in inferttility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end our team  -->
+    <!-- today Consultations  -->
+  <div class="container">
+    <div class="consulat row">
+        <div class="col-md-8">
+            <h2>Call Us Today for Any Consultations</h2>
+            <p>Our experts are here to help you. We will guide you for the best…</p>
+        </div>
+        <div class="col-md-4 mt-1">
+            <button type="button" class="btn btn-warning p-3 ">Call - 7000770777</button>
+        </div>
+    </div>
+  </div>
+    <!-- end today Consultations  -->
+    <!-- map  -->
+    <section class="container-fluid" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="map google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29748.8903942196!2d72.83107973494391!3d21.247256894979163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f28545d61a9%3A0x703740bbb637551d!2sAmroli%2C%20Surat%2C%20Gujarat%20394107!5e0!3m2!1sen!2sin!4v1624095084185!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <!-- end map  -->
+    <!-- footer   -->
+        <section class="w3l-footer-29-main" id="footer">
+            <div class="footer-29 py-5">
+            <div class="container pb-lg-3">
+                <div class="row footer-top-29">
+                <div class="col-lg-4 col-md-6 footer-list-29 footer-1 mt-md-4">
+                    <h6 class="footer-title-29">Contact Us</h6>
+                    <ul>
+                    <li>
+                        <p><span class="fa fa-map-marker"></span>MIG-04, Maruti Apprtment, ashok road surat gujarat.</p>
+                    </li>
+                    <li><a href="tel:+91 9893962729"><span class="fa fa-phone"></span> +91 7000770777</a></li>
+                    <li><a href="mailto:dr.@gmail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
+                        dr.doctore@gmail.com</a></li>
+                    </ul>
+                    <div class="main-social-footer-29">
+                    <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                    <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                    <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                    <a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+                    <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 footer-list-29 footer-2 mt-4">
+                    <ul>
+                    <h6 class="footer-title-29">Facilities Available</h6>
+                    <li><a href="#url">Histopathology</a></li>
+                    <li><a href="#url">Bone Marrow</a></li>
+                    <li><a href="#url">Cytopathology</a></li>
+                    <li><a href="#url">F.N.A.C.</a></li>
+                    <li><a href="#url">Pap Smear</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6 footer-list-29 footer-4 mt-4">
+                    <ul>
+                    <h6 class="footer-title-29">Quick Links</h6>
+                    <li><a href="index.php">Home page</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="services.html">Our services</a></li>
+                    <li><a href="#blog">Blog posts</a></li>
+                    <li><a href="contact.html">Get in touch</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-list-29 footer-3 mt-4">
+                    <div class="properties">
+                    <h6 class="footer-title-29">About Us</h6>
+                    <a class="d-grid twitter-feed" href="blog-single.html">
+                        <p>We are focused on providing our clients with the highest
+                        level of quality and excellent customer support.</p>
+                    </a>
+                    <!-- <a class="d-grid twitter-feed" href="blog-single.html">
+                        <p>See our gallery of our auto body repair work.</p>
+                    </a> -->
+                    </div>
+                </div>
+                </div>
+                <div class="row bottom-copies">
+                <p class="copy-footer-29 col-lg-8">© 2021. All rights reserved | Design by <a href="">New Milleium Infotech</a></p>
+                <ul class="list-btm-29 col-lg-4">
+                    <li><a href="#link">Privacy policy</a></li>
+                    <li><a href="#link">Terms of service</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <!-- move top -->
+            <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top" style="display: block;">
+            <span class="fa fa-level-up"></span>
+            </button>
+            <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+                } else {
+                document.getElementById("movetop").style.display = "none";
                 }
-            );
-        });
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            </script>
+            <!-- /move top -->
+        </section>
+    <!-- end footer  -->
+<!-- script  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+    <script>
+        $(document).ready(function(){
+        $(".dropdown").hover(            
+                    function() {
+                        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+                        $(this).toggleClass('open');        
+                    },
+                    function() {
+                        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("100");
+                        $(this).toggleClass('open');       
+                    }
+                );
+            });
     </script>
     <script>
        var preloder = document.getElementById('loading')
@@ -270,6 +446,13 @@
           autoplay: true,
           autoplaySpeed: 2000,
         });
-        </script>
+        $('.slick').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+    </script>
 </body>
 </html>
